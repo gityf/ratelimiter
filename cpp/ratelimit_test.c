@@ -9,6 +9,8 @@ int main() {
 			break;
 		}
 	}
+	printf("burst:%d, missed:%d, printed:%d\n",
+		state.burst, state.missed, state.printed);
 	sleep(1);
 	while(1) {
 		if (0 == ratelimit(&state)) {
